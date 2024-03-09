@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shriyaa</title>
+    </head>
+    <body>
+        <h1>Hello Shriyaa</h1>
+        <p>Where my hug at?</p>
+        <button  type="button" id="Hug" onclick="Hug()">Hug</button>
+        <button  type="button" id="noHug" onclick="noHug()">No hug</button>
+        <script>
+            function Hug(){
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "https://t3.ftcdn.net/jpg/02/17/18/84/360_F_217188426_smgwnDFnQC5DHQ8mKGkdsMO7oDDP5nZn.jpg");
+    x.setAttribute("width", "200");
+    x.setAttribute("height", "200");
+    x.setAttribute("alt", "Hug");
+
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "https://as1.ftcdn.net/v2/jpg/01/18/59/54/1000_F_118595471_zy2QSEetxuwyGPx7xGekzxLUaeE7Fp35.jpg");
+    x.setAttribute("width", "200");
+    x.setAttribute("height", "200");
+    x.setAttribute("alt", "Hug2");
+
+    document.body.appendChild(x);
+    var p = document.createElement("P");
+    var r = document.createTextNode("So sappy");
+    p.appendChild(r);
+    document.body.appendChild(p);
+
+}
+function noHug(){
+    var y = document.createElement("IMG");
+    y.setAttribute("src", "https://t3.ftcdn.net/jpg/05/60/35/16/360_F_560351622_lYIIsAMTp45cLUwrwyOJSaWaDw28BG1S.jpg");
+    y.setAttribute("width", "200");
+    y.setAttribute("height", "200");
+    y.setAttribute("alt", "noHug");
+    document.body.appendChild(y);
+
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "https://www.hindustantimes.com/ht-img/img/2023/06/03/1600x900/breakup-g10d795b5d_1920_1676885826704_1685774197417.jpg");
+    x.setAttribute("width", "200");
+    x.setAttribute("height", "200");
+    x.setAttribute("alt", "noHug2");
+
+    alert("Wrong answer :(")
+}
+        </script>
+    </body>
+</html>
